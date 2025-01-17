@@ -1,0 +1,46 @@
+.inner {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.App {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+  .PokemonIndex {
+    .inner {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      .pokemon{
+        width: 250px;
+        text-align: center;
+        box-shadow: #ececec 0px 48px 100px 0px;
+        line-height: 1.5;
+        border-radius: 10px;
+        padding: 30px;
+        img {
+          width: 150px;
+          transition: .5s;
+          object-fit: cover ;
+        }
+        img:hover {
+          scale: 2.0;
+        }
+        .pokemon_title {
+          font-size: 22px;
+        }
+        .pokemon_description {
+          padding: 10px;
+          &:nth-child(even) {
+            background-color: #ececec;
+          }
+        }
+      }
+
+    }
+  }
+}
