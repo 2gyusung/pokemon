@@ -3,6 +3,7 @@ import React from 'react'
 const Search = () => {
 
   const searchBtnEl = () => {
+    console.log('출력');
     
   }
   return (

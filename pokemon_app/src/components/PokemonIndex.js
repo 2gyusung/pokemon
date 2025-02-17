@@ -9,7 +9,7 @@ function PokemonIndex() {
     const allPokemonData = [];
 
 
-    for(let i=1; i <= 100; i++){
+    for(let i=1; i <= 30; i++){
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`); //포켓몬정보
       const speciesResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${i}`); //포켓몬스펙정보
       const koreanName = speciesResponse.data.names.find(name => name.language.name === 'ko') //ko만 find 함수를 사용해 찾아서 koreanName 변수에 담는다 find ko 찾으면 끝남
